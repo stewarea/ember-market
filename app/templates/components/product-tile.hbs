@@ -1,9 +1,9 @@
 
 {{#each category.products as |product|}}
-{{heading}}
+
   {{#link-to 'product' product }}
   <h2> {{product.name}} : ${{product.price}}</h2>{{/link-to}}
   <img src='{{product.image}}' alt="image of product">
 
-  <button {{action 'addtoCart' product}}>Add to Cart</button>
+  <button {{action 'addToCart' product}}>Add to Cart</button>
 {{/each}}

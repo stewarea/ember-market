@@ -23,7 +23,17 @@
   <h1>ESAS Outdoor Store</h1>
 </header>
 <div class="container">
-  {{outlet}}
+  <div class="row">
+    <div class="col-xs-6">
+      <h2><u>{{model.title}}</u></h2>
+
+      {{ outlet }}
+    </div>
+    <div class="col-xs-3 cart">
+      <h1>Cart Display</h1>
+      {{display-cart}}
+    </div>
+  </div>
 </div>
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div class="container-fluid">

@@ -6,6 +6,7 @@ export default Ember.Route.extend({
       // products: this.store.query('product', {orderBy: "category", equalTo: params.category_id})
     // });
   },
+
   actions: {
     addProduct(params) {
       var newProduct = this.store.createRecord('product', params);
