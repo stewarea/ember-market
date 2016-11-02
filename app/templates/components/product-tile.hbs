@@ -1,5 +1,7 @@
 
-{{#each product as |product|}}
+{{#each category.products as |product|}}
+
+
 
   {{#link-to 'product' product }}
   <h2> {{product.name}} : ${{product.price}}</h2>{{/link-to}}
