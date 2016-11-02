@@ -24,14 +24,22 @@
 </header>
 <div class="container">
   <div class="row">
-    <div class="col-xs-6">
-      <h2><u>{{model.title}}</u></h2>
 
-      {{ outlet }}
+    <div class="col-xs-6">
+      <div class="well welloutlet">
+        <h2><u>{{model.title}}</u></h2>
+
+        {{ outlet }}
+
+      </div>
     </div>
+
     <div class="col-xs-3 cart">
-      <h1>Cart Display</h1>
-      {{display-cart}}
+      <div class="well wellcart">
+        <h1>Cart Display</h1>
+        <hr>
+        {{display-cart}}
+      </div>
     </div>
   </div>
 </div>

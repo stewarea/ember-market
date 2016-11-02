@@ -6,5 +6,8 @@ export default DS.Model.extend({
   description: DS.attr(),
   image: DS.attr(),
   category: DS.belongsTo('category', { async: true})
-
+  // shoppingCart: Ember.inject.service(),
+  // inCart: Ember.computed('shoppingCart.products.[]', function() {
+  //   return this.get('shoppingCart').includes(this);
+  // })
 });

@@ -5,7 +5,23 @@ export default Ember.Service.extend({
   total: 0,
   add(product) {
     this.get('products').pushObject(product);
+  },
+
+  remove(index) {
+    this.get('products').removeAt(index);
+
+  // },
+  // includes(product) {
+  //   return this.get('products').includes(product)
+  },
+
+  addPrice(product) {
     var newTotal = this.get('total') + parseInt(product.get('price'));
     this.set('total', newTotal);
+  },
+  minusPrice(product) {
+    var newTotal = this.get('total') - parseInt(product.get('price'));
+    this.set('total', newTotal);
   }
+
 });

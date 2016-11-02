@@ -1,8 +1,10 @@
+<div class="total">
+  <h2>Total = ${{cart.total}}</h2>
+</div>
 <ul>
-{{#each shoppingCart.products as |product|}}
-  <li>{{product.name }} -- {{product.price}}</li>
+{{#each cart.products as |product index|}}
+  <h4>{{product.name }} -- ${{product.price}}</h4>
+  <button {{ action 'remove' product }}>Remove from Cart</button>
+  <!-- {{log product}} -->
 {{/each}}
 </ul>
-<hr>
-
-<h2>Total = ${{shoppingCart.total}}</h2>
