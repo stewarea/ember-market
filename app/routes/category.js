@@ -4,8 +4,8 @@ export default Ember.Route.extend({
   model(params) {
     // return this.store.findRecord('category', params.category_id);
     return Ember.RSVP.hash({
-      categories: this.store.findRecord('category', params.category_id),
-      products: this.store.findAll('product', params.category)
+      categories: this.store.findRecord('category', params.category.id),
+      products: this.store.findRecord('product', params.category_id)
     });
   },
   actions: {
