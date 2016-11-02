@@ -17,6 +17,13 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+    apiKey: "AIzaSyB76hpYmInIKZAybOdvgwNV-5EDjFq1NyM",
+    authDomain: "market-e37d3.firebaseapp.com",
+    databaseURL: "https://market-e37d3.firebaseio.com",
+    storageBucket: "market-e37d3.appspot.com",
+  },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
