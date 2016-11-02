@@ -1,1 +1,4 @@
-{{yield}}
+{{#each model.products as |product|}}
+  {{#link-to 'product' product_id}}<h2>{{header}}</h2>{{/link-to}}
+  <img src='{{product.image}}' alt="image of product">
+{{/each}}

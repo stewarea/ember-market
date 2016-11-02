@@ -3,17 +3,20 @@
     "name":"Stove",
     "price":"50",
     "description":"Cooks stuff",
-    "image":"http://www.jetboil.com/uploadedImages/Site_Assets/Homepage/Slide_2/Genesis_full_system.png"
+    "image":"http://www.jetboil.com/uploadedImages/Site_Assets/Homepage/Slide_2/Genesis_full_system.png",
+    "category": "1"
     }, {
     "name":"Hammock",
     "price":"100",
     "description":"lay in this thing",
-    "image":"http://bpc.h-cdn.co/assets/16/26/1467413081-warbonnet-camping-hammock.jpg"
+    "image":"http://bpc.h-cdn.co/assets/16/26/1467413081-warbonnet-camping-hammock.jpg",
+    "category": "0"
   }, {
     "name":"Snowboard",
     "price":"200",
     "description":"shred the gnar",
-    "image":"http://static.highsnobiety.com/wp-content/uploads/2015/11/09180509/burton-x-colette-paris-01.jpg"
+    "image":"http://static.highsnobiety.com/wp-content/uploads/2015/11/09180509/burton-x-colette-paris-01.jpg",
+    "category": "3"
       }],
   "categories": [{
     "title": "Sleeping"
