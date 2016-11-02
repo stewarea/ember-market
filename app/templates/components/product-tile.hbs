@@ -1,5 +1,8 @@
-{{product.name}}
+
 {{#each product as |product|}}
-  {{#link-to 'product' product.product_id  }}<h2>{{product.name}} : ${{product.price}}</h2>{{/link-to}}
+
+  {{#link-to 'product' product }}
+  <h2> {{product.name}} : ${{product.price}}</h2>{{/link-to}}
   <img src='{{product.image}}' alt="image of product">
+
 {{/each}}
