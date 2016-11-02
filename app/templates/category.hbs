@@ -1,2 +1,5 @@
-<h2>{{model.title}}</h2>
-{{product-tile product=model}}
+{{new-product category=model.categories addProduct="addProduct"}}
+
+<h2><u>{{model.categories.title}}</u></h2>
+
+{{product-tile product=model.products }}

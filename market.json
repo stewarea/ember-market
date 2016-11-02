@@ -19,11 +19,13 @@
     "category": "3"
       }],
   "categories": [{
-    "title": "Sleeping"
+    "title": "Sleeping",
+    "products": "1"
       }, {
-    "title": "Cookware"
+    "title": "Cookware",
+    "products": "0"
   }, {
-    "title": "Summer Sporting"
+    "title": "Summer Sporting",
   }, {
     "title": "Winter Sporting"
         }]
