@@ -2,22 +2,25 @@
 
 
 {{#each sortedProducts as |product|}}
+  <div class="panel panel-default" style="background-image: url('{{product.image}}')">
 
-  {{#link-to 'product' product }}
+    <div class="productpanel">
+      {{#link-to 'product' product }}{{product.name}} : ${{product.price}} {{/link-to}}
+    </div>
 
-  <h2> {{product.name}} : ${{product.price}}</h2>{{/link-to}}
+      {{#if product.inCart}}<p> Only one.  Don't be greedy. </p>
+      {{else}}
+      <button {{action 'addToCart' product}}>Add to Cart</button>
+      {{/if}}
 
-  <form>
+      <!-- <img src='{{product.image}}' alt="image of product" style="background-image"> -->
+
+  </div>
+
   <!-- <div class="form-control">
     <label>Quantity</label>
     <input value="quantity" id="quantity">
   </div> -->
-  <img src='{{product.image}}' alt="image of product">
-  {{#if product.inCart}}<p> Only one.  Don't be greedy. </p>
-  {{else}}
-  <br />
-  <button {{action 'addToCart' product}}>Add to Cart</button>
-  {{/if}}
-</form>
+
 
 {{/each}}

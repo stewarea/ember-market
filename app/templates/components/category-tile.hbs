@@ -1,5 +1,7 @@
 <div class="text-center">
   {{#each sortedCategories as |category|}}
+  <div class="panel panel-default">
     {{#link-to 'category' category}}<h2>{{category.title}}</h2>{{/link-to}}
+  </div>
   {{/each}}
 </div>

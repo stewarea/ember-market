@@ -10,9 +10,26 @@ img{
   min-height: 600px;
   max-height: 500px;
   overflow: auto;
+  border: solid black;
 }
 .welloutlet {
   min-height: 600px;
   max-height: 500px;
   overflow: auto;
+}
+
+.productpanel {
+font-size: 2em;
+text-shadow:2px 2px 8px white,
+2px 2px 8px white,
+2px 2px 8px white,
+2px 2px 8px black;
+}
+
+.panel-default {
+  background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 150px;
+   min-width: 300px;
 }
