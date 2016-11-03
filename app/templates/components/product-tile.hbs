@@ -1,9 +1,23 @@
 
+
+
 {{#each sortedProducts as |product|}}
 
   {{#link-to 'product' product }}
-  <h2> {{product.name}} : ${{product.price}}</h2>{{/link-to}}
-  <img src='{{product.image}}' alt="image of product">
 
+  <h2> {{product.name}} : ${{product.price}}</h2>{{/link-to}}
+
+  <form>
+  <!-- <div class="form-control">
+    <label>Quantity</label>
+    <input value="quantity" id="quantity">
+  </div> -->
+  <img src='{{product.image}}' alt="image of product">
+  {{#if product.inCart}}<p> Only one.  Don't be greedy. </p>
+  {{else}}
+  <br />
   <button {{action 'addToCart' product}}>Add to Cart</button>
+  {{/if}}
+</form>
+
 {{/each}}

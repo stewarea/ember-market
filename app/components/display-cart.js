@@ -5,7 +5,6 @@ export default Ember.Component.extend({
 
   actions: {
     remove(product) {
-      console.log(product);
       this.get('cart').remove(product);
       this.get('cart').minusPrice(product);
     }

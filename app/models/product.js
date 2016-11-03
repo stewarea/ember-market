@@ -5,9 +5,11 @@ export default DS.Model.extend({
   price: DS.attr(),
   description: DS.attr(),
   image: DS.attr(),
-  category: DS.belongsTo('category', { async: true})
-  // shoppingCart: Ember.inject.service(),
-  // inCart: Ember.computed('shoppingCart.products.[]', function() {
-  //   return this.get('shoppingCart').includes(this);
+  category: DS.belongsTo('category', { async: true}),
+
+  cart: Ember.inject.service("shopping-cart"),
+  inCart: Ember.computed('cart.products.[]', function(){
+      return this.get('cart').includes(this);
+    })
   // })
 });
