@@ -7,8 +7,8 @@ export default Ember.Service.extend({
     this.get('products').pushObject(product);
   },
 
-  remove(index) {
-    this.get('products').removeAt(index);
+  remove(product) {
+    this.get('products').removeObject(product);
 
   // },
   // includes(product) {
