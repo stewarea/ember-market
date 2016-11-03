@@ -1,5 +1,5 @@
 
-{{#each category.products as |product|}}
+{{#each sortedProducts as |product|}}
 
   {{#link-to 'product' product }}
   <h2> {{product.name}} : ${{product.price}}</h2>{{/link-to}}
