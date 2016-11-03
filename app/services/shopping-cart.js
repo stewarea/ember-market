@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Service.extend({
   products: [],
   total: 0,
-  add(product, quantity) {
+  add(product) {
     this.get('products').pushObject(product);
   },
 
@@ -12,7 +12,7 @@ export default Ember.Service.extend({
 
   },
   includes(product) {
-    return this.get('products').includes(product)
+    return this.get('products').includes(product);
   },
 
   addPrice(product) {

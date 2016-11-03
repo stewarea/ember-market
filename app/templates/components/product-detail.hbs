@@ -1,9 +1,16 @@
-<div class="well">
-  {{product.name}} - ${{product.price}} <img src="{{product.image}}"><br />
-  Category:  {{product.category.title}}
-  {{#if product.inCart}}<p> Only one.  Don't be greedy. </p>
-  {{else}}
+
+<div class="panel panel-default" style="background-image: url('{{product.image}}')">
+  <h2>{{heading}}</h2>
+
+  <!-- {{product.name}} - ${{product.price}}  -->
   <br />
-  <button {{action 'addToCart' product}}>Add to Cart</button>
+  Description: {{product.description}}
+  <br>
+  Category:  {{#link-to 'category' product.category.id}}{{product.category.title}}{{/link-to}}
+  {{#if product.inCart}}
+    <p> Only one, please.  Don't be greedy. </p>
+  {{else}}
+    <br />
+    <button {{action 'addToCart' product}}>Add to Cart</button>
   {{/if}}
 </div>

@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         price: this.get('price') ? this.get('price') : "",
         description: this.get('description') ? this.get('description') : "",
         image: this.get('image') ? this.get('image') : "https://dummyimage.com/600x400/000/fff.png&text=??",
-        category: this.get('category')
+        category: $("#category_id").val()
       };
     this.set('isShowingModal', false);
     this.sendAction("addProduct", params);
@@ -20,6 +20,7 @@ export default Ember.Component.extend({
     this.set('price', "");
     this.set('description', "");
     this.set('image', "");
+    this.set('category', "");
     }
-  } 
+  }
 });

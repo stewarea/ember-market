@@ -21,8 +21,21 @@
       <div class="form-group">
         <label for="image">Image URL</label>
         {{input value=image id="image" class="form-control"}}
+
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select class="form-control" id="category_id">
+            {{#each category as |category|}}
+            <option value="{{category.id}}" >{{category.title}}</option>
+            {{/each}}
+          </select>
+
+        </div>
+
       </div>
       <button class="btn btn-success">Add</button>
+
     </form>
+
   {{/modal-dialog}}
 {{/if}}

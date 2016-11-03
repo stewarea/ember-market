@@ -8,13 +8,11 @@
       {{#link-to 'product' product }}{{product.name}} : ${{product.price}} {{/link-to}}
     </div>
 
-      {{#if product.inCart}}<p> Only one.  Don't be greedy. </p>
-      {{else}}
+    {{#if product.inCart}}
+      <p> Only one.  Don't be greedy. </p>
+    {{else}}
       <button {{action 'addToCart' product}}>Add to Cart</button>
-      {{/if}}
-
-      <!-- <img src='{{product.image}}' alt="image of product" style="background-image"> -->
-
+    {{/if}}
   </div>
 
   <!-- <div class="form-control">
