@@ -1,5 +1,9 @@
 <div class="well">
   {{product.name}} - ${{product.price}} <img src="{{product.image}}"><br />
   Category:  {{product.category.title}}
+  {{#if product.inCart}}<p> Only one.  Don't be greedy. </p>
+  {{else}}
+  <br />
   <button {{action 'addToCart' product}}>Add to Cart</button>
+  {{/if}}
 </div>
